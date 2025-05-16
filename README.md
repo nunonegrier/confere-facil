@@ -18,7 +18,7 @@ Este agente utiliza 3 agentes para auxiliar o usuário a identificar uma possív
  
 # Utilização
 
-Pensado para ser um agente que possa ser utilizado por pessoas de diversas idades, e diferentes níveis de afinidade com soluções tecnológicas. A utilização do confere-fácil é extremamente simplificada:
+Pensado para ser um agente que possa ser utilizado por pessoas de diversas idades e diferentes níveis de afinidade com soluções tecnológicas, o Confere-fácil tem uma usabilidade extremamente simplificada:
 
 - O usuário começa fornecendo uma descrição em linguagem coloquial da situação que ele percebe como estranha e pretende ver esclarecida
 - Na sequência o agente apresenta ao usuário de 1 a 3 perguntas que vão auxiliar no processo de identificação, análise e prevensão de fraudes
