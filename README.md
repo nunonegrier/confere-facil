@@ -24,5 +24,23 @@ Pensado para ser um agente que possa ser utilizado por pessoas de diversas idade
 - Na sequência o agente apresenta ao usuário de 1 a 3 perguntas que vão auxiliar no processo de identificação, análise e prevensão de fraudes
 - Por último o usuário recebe então a análise da ocorrência e as recomendações de segurança.
 
-O uso de 3 camadas de agentes permite que tudo se inicie com uma primeira descrição da ocorrência fornecida pelo usuário, que pode apresentar falta de detalhes, omissões naturais de fatos e outras inconsistências naturais do intervalo entre a linguagem coloquial e a técnica. As camadas de análise posteriores se encarregam de completar essas lacunas e fornecer um resultado confiável.
+O uso de 3 camadas de agentes permite que tudo se inicie com uma primeira descrição da ocorrência fornecida pelo usuário, que pode apresentar falta de detalhes, omissões naturais de fatos e outras inconsistências naturais do intervalo entre a linguagem coloquial e a técnica. As camadas de análise posteriores se encarregam de completar essas lacunas e fornecer um resultado confiável:
+
+# Exemplo de desenvolvimento do conhecimento a partir de uma descrição simples e incompleta:
+
+- Usuário: Recebi um pedido de dinheiro emprestado no whatsapp
+
+O primeiro agente recebe o prompt e utiliza o conjunto de conhecimentos do LLM mais a pesquisa do google para identificar o tipo da fraude e passar essa informação para o segundo agente
+O segundo agente então analisa novamente a descrição mais o resultado da pesquisa do primeiro agente e define de 1 a 3 perguntas que permitirão que ele complemente as informações:
+
+- Segundo agente:
+    1.  Você reconheceu o número de telefone de onde partiu o pedido de dinheiro?
+    2.  Você tentou confirmar a identidade da pessoa por outro meio de comunicação além do WhatsApp (por exemplo, ligação telefônica, contato pessoal)?
+    3.  Qual foi a justificativa apresentada para o pedido de dinheiro?
       
+- Usuário:
+    1.  sim, é o telefone de um amigo
+    2.  tentei, mas ela não atendeu, respondeu só por mensagem
+    3.  disse que tinha esquecido os cartões em casa e precisava pagar uma conta urgente
+
+Com essas informações, o terceiro agente consegue então validar as informações geradas desde o início do processo e fornecer as recomendações de segurança, os contatos das empresas (sempre que a descrição inicial contenha alguma menção a uma empresa ou serviço, público ou privado) e por último, a lista "O que você NÃO deve fazer".
