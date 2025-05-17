@@ -109,7 +109,7 @@ def agente_especialista(descricao_ocorrencia, analise_da_fraude):
             Fornecer os contados dos canais de atendimento da empresa ou serviço, públicos ou privados, ou qualquer
             outro tipo de negócio que tenham sido mencionados na descrição da ocorrência para que o usuário possa entrar
             em contato para esclarecer a situação.
-            Terminar listando exatamanete e de forma clara e estruturada com as indicações do que o usuário não deve fazer no presente caso.
+            Termine listando exatamente e de forma clara e estruturada com as indicações do que o usuário não deve fazer no presente caso.
             """,
         description="Agente especialista em ciberseguranca",
         tools=[google_search]
