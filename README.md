@@ -44,3 +44,27 @@ O segundo agente então analisa novamente a descrição mais o resultado da pesq
     3.  disse que tinha esquecido os cartões em casa e precisava pagar uma conta urgente
 
 Com essas informações, o terceiro agente consegue então validar as informações geradas desde o início do processo e fornecer as recomendações de segurança, os contatos das empresas (sempre que a descrição inicial contenha alguma menção a uma empresa ou serviço, público ou privado) e por último, a lista "O que você NÃO deve fazer".
+
+- Terceiro agente:
+
+    Para evitar cair nesse tipo de fraude, siga estas instruções:
+
+    1.  **Confirme a identidade:** Nunca transfira dinheiro ou forneça informações pessoais sem confirmar a identidade da pessoa que está solicitando. A melhor maneira de fazer isso é entrar em contato com a pessoa por meio de 
+um canal de comunicação diferente, como uma ligação telefônica ou pessoalmente.
+    2.  **Desconfie de mensagens urgentes:** Golpistas geralmente usam o senso de urgência para pressionar as vítimas a agirem impulsivamente. Se você receber uma mensagem pedindo dinheiro com urgência, pare e pense antes de agir.
+    3.  **Verifique as informações:** Se você receber uma mensagem de um amigo ou familiar pedindo dinheiro, verifique as informações fornecidas na mensagem. Por exemplo, você pode perguntar sobre detalhes que só a pessoa real 
+saberia.
+    4.  **Proteja sua conta do WhatsApp:** Ative a verificação em duas etapas no WhatsApp para adicionar uma camada extra de segurança à sua conta. Isso dificulta que os golpistas acessem sua conta, mesmo que tenham seu número 
+de telefone.
+    5.  **Informe seus contatos:** Avise seus amigos e familiares sobre esse tipo de golpe para que eles também possam se proteger.
+
+    **Canais de Atendimento:**
+
+    Como a mensagem foi recebida via WhatsApp, e a situação envolve um possível amigo, tente contato direto com ele através de outros meios (telefone, pessoalmente) para confirmar a veracidade do pedido. Se você suspeitar que a conta do seu amigo foi comprometida, alerte-o para que ele possa avisar seus contatos.
+
+    **O que você NÃO deve fazer:**
+
+    1.  **Não transfira o dinheiro:** Sob nenhuma circunstância transfira o dinheiro solicitado sem antes confirmar a veracidade do pedido diretamente com seu amigo por meio de um canal de comunicação seguro.
+    2.  **Não forneça informações pessoais:** Não compartilhe dados pessoais ou bancários com o remetente da mensagem.
+    3.  **Não clique em links suspeitos:** Se a mensagem contiver links, não clique neles, pois podem ser maliciosos.
+    4.  **Não ignore a situação:** Alerte seu amigo sobre a possível clonagem de sua conta do WhatsApp e avise seus contatos sobre a tentativa de golpe.
