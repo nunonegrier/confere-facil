@@ -1,4 +1,4 @@
-# Confere-facil
+# Confere-fraude-facil
 Agente que ajuda a identificar fraudes
 
 Este agente utiliza 3 agentes para auxiliar o usuário a identificar uma possível fraude digital em curso:
@@ -24,5 +24,47 @@ Pensado para ser um agente que possa ser utilizado por pessoas de diversas idade
 - Na sequência o agente apresenta ao usuário de 1 a 3 perguntas que vão auxiliar no processo de identificação, análise e prevensão de fraudes
 - Por último o usuário recebe então a análise da ocorrência e as recomendações de segurança.
 
-O uso de 3 camadas de agentes permite que tudo se inicie com uma primeira descrição da ocorrência fornecida pelo usuário, que pode apresentar falta de detalhes, omissões naturais de fatos e outras inconsistências naturais do intervalo entre a linguagem coloquial e a técnica. As camadas de análise posteriores se encarregam de completar essas lacunas e fornecer um resultado confiável.
+O uso de 3 camadas de agentes permite que tudo se inicie com uma primeira descrição da ocorrência fornecida pelo usuário, que pode apresentar falta de detalhes, omissões naturais de fatos e outras inconsistências naturais do intervalo entre a linguagem coloquial e a técnica. As camadas de análise posteriores se encarregam de completar essas lacunas e fornecer um resultado confiável:
+
+# Exemplo de desenvolvimento do conhecimento a partir de uma descrição simples e incompleta:
+
+- Usuário: Recebi um pedido de dinheiro emprestado no whatsapp
+
+O primeiro agente recebe o prompt e utiliza o conjunto de conhecimentos do LLM mais a pesquisa do google para identificar o tipo da fraude e passar essa informação para o segundo agente
+O segundo agente então analisa novamente a descrição mais o resultado da pesquisa do primeiro agente e define de 1 a 3 perguntas que permitirão que ele complemente as informações:
+
+- Segundo agente:
+    1.  Você reconheceu o número de telefone de onde partiu o pedido de dinheiro?
+    2.  Você tentou confirmar a identidade da pessoa por outro meio de comunicação além do WhatsApp (por exemplo, ligação telefônica, contato pessoal)?
+    3.  Qual foi a justificativa apresentada para o pedido de dinheiro?
       
+- Usuário:
+    1.  sim, é o telefone de um amigo
+    2.  tentei, mas ela não atendeu, respondeu só por mensagem
+    3.  disse que tinha esquecido os cartões em casa e precisava pagar uma conta urgente
+
+Com essas informações, o terceiro agente consegue então validar as informações geradas desde o início do processo e fornecer as recomendações de segurança, os contatos das empresas (sempre que a descrição inicial contenha alguma menção a uma empresa ou serviço, público ou privado) e por último, a lista "O que você NÃO deve fazer".
+
+- Terceiro agente:
+
+    Para evitar cair nesse tipo de fraude, siga estas instruções:
+
+    1.  **Confirme a identidade:** Nunca transfira dinheiro ou forneça informações pessoais sem confirmar a identidade da pessoa que está solicitando. A melhor maneira de fazer isso é entrar em contato com a pessoa por meio de 
+um canal de comunicação diferente, como uma ligação telefônica ou pessoalmente.
+    2.  **Desconfie de mensagens urgentes:** Golpistas geralmente usam o senso de urgência para pressionar as vítimas a agirem impulsivamente. Se você receber uma mensagem pedindo dinheiro com urgência, pare e pense antes de agir.
+    3.  **Verifique as informações:** Se você receber uma mensagem de um amigo ou familiar pedindo dinheiro, verifique as informações fornecidas na mensagem. Por exemplo, você pode perguntar sobre detalhes que só a pessoa real 
+saberia.
+    4.  **Proteja sua conta do WhatsApp:** Ative a verificação em duas etapas no WhatsApp para adicionar uma camada extra de segurança à sua conta. Isso dificulta que os golpistas acessem sua conta, mesmo que tenham seu número 
+de telefone.
+    5.  **Informe seus contatos:** Avise seus amigos e familiares sobre esse tipo de golpe para que eles também possam se proteger.
+
+    **Canais de Atendimento:**
+
+    Como a mensagem foi recebida via WhatsApp, e a situação envolve um possível amigo, tente contato direto com ele através de outros meios (telefone, pessoalmente) para confirmar a veracidade do pedido. Se você suspeitar que a conta do seu amigo foi comprometida, alerte-o para que ele possa avisar seus contatos.
+
+    **O que você NÃO deve fazer:**
+
+    1.  **Não transfira o dinheiro:** Sob nenhuma circunstância transfira o dinheiro solicitado sem antes confirmar a veracidade do pedido diretamente com seu amigo por meio de um canal de comunicação seguro.
+    2.  **Não forneça informações pessoais:** Não compartilhe dados pessoais ou bancários com o remetente da mensagem.
+    3.  **Não clique em links suspeitos:** Se a mensagem contiver links, não clique neles, pois podem ser maliciosos.
+    4.  **Não ignore a situação:** Alerte seu amigo sobre a possível clonagem de sua conta do WhatsApp e avise seus contatos sobre a tentativa de golpe.
