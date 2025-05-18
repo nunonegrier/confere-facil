@@ -118,3 +118,9 @@ de telefone.
 3.  **Não Forneça Informações Pessoais:** Não forneça seus dados pessoais, bancários ou financeiros em resposta a e-mails ou telefonemas suspeitos.
 4.  **Não Ignore a Situação:** Não ignore a situação. Entre em contato com a Vivo e o Itaú para relatar o ocorrido e confirmar a fraude.
 5.  **Não Tarde em Registrar um B.O.:** Se confirmado que é uma fraude, não demore em registrar um Boletim de Ocorrência (B.O.) para se proteger legalmente e ajudar nas investigações.
+
+![confere-fraude-facli_01](https://github.com/user-attachments/assets/f104537f-d966-421b-9a74-1e0948e0cf3b)
+
+![confere-fraude-facli_02](https://github.com/user-attachments/assets/07b77408-2a73-4c38-bc20-577f935e6ba1)
+
+![confere-fraude-facli_03](https://github.com/user-attachments/assets/dc8d2bd6-7563-402f-98dc-0688aca2d76a)
